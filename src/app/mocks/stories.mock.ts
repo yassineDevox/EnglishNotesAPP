@@ -3,7 +3,7 @@
         id: "1",
         title: "The Greedy Mouse",
         content: `A greedy mouse saw a basket full of corn. He wanted to eat it. So he made a small hole in the basket. He squeezed in through the hole. He ate a lot of corn. He felt full and was very happy.
-        Now he wanted to come out. He tried to come out through the small hole. He could not. His belly was full. He tried again. But it was of no use. 
+        Now he wanted to come out. He tried to come out through the small hole. He could not. His belly was full. H e tried again. But it was of no use. 
         The mouse started crying. A rabbit was passing by. It heard the mouse’s cry and asked, “Why are you crying, my friend?”s
         The mouse explained, “I made a small hole and came into the basket to eat the corn. Now I am not able to get out throughs that hole.”
         The rabbit said, “It is because you ate too much. Wait till your belly shrinks.” The rabbit laughed and went away.ss
@@ -31,9 +31,9 @@
     }, {
         id: "3",
         title: "The Goose with the Golden Eggs",
-        content: `Once upon a time, a man and his wife had the good fortune to have a goose which laid a golden egg every day. Lucky though they were, they soon began to think they were not getting rich fast enough.
+        content: `Once upon a time, a man and his wife had the good fortune to have a goose which laid a golden egg every day. Lucky though they were, they soon began to think they were not getting rich fast enough.<br/>
 
-        They imagined that if the bird is able to lay golden eggs, its insides must be made of gold. And they thought that if they could get all that precious metal at once, they would get mighty rich very soon. So the man and his wife decided to kill the bird.
+        They imagined that if the bird is able to lay golden eggs, its insides must be made of gold. And they thought that if they could get all that precious metal at once, they would get mighty rich very soon. So the man and his wife decided to kill the bird.<br/>
         
         However, upon cutting the goose open, they were shocked to find that its innards were like that of any other goose!`,
         imgURL: "https://www.kidsworldfun.com/images/short-stories/short_stories_goosewithgolde" +
