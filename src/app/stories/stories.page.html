@@ -1,16 +1,18 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>stories</ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="primary">
+        <ion-title text-center>My List of stories</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-      <ion-list>
+    <ion-list>
         <ion-item *ngFor="let story of stories">
-          <ion-avatar>
-            <ion-img slot="start" [src]="story.imgURL"></ion-img>
-            <ion-label> {{story.title}}</ion-label>
-          </ion-avatar>
-        </ion-item>       
-      </ion-list>
+            <ion-avatar slot="start">
+                <ion-img  [src]="story.imgURL"></ion-img>
+            </ion-avatar>
+            <ion-label>
+                {{story.title}}</ion-label>
+
+        </ion-item>
+    </ion-list>
 </ion-content>
