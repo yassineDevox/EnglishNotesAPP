@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {STORIES} from '../mocks/stories.mock';
+import { StoriesService } from './stories.service';
 import { Story } from './story.model';
 
 @Component({
@@ -7,14 +7,13 @@ import { Story } from './story.model';
   templateUrl: './stories.page.html',
   styleUrls: ['./stories.page.scss'],
 })
-export class StoriesPage implements OnInit {
+export class StoriesPage implements OnInit{
 
   stories:Array<Story>;
-  
-  constructor() { }
+  constructor(private _storiesService:StoriesService){}
 
-  ngOnInit() {
-    this.stories = STORIES;
+  ngOnInit(){
+    this.stories = this._storiesService.getAll();
   }
 
 }

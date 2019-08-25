@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title text-center >{{selectedStory.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid no-padding>
+    <ion-row >
+      <ion-col>
+        <ion-img [src]="selectedStory.imgURL" ></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-justify">
+        <ion-item text-wrap>
+          {{selectedStory.content}}
+        </ion-item>
+      </ion-col>
+    </ion-row>    
+  </ion-grid>
+</ion-content>
