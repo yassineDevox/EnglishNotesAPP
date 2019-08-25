@@ -1,20 +1,45 @@
 <ion-header>
   <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/stories"></ion-back-button>
+    </ion-buttons>
     <ion-title text-center >{{selectedStory.title}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-grid no-padding>
-    <ion-row >
-      <ion-col>
-        <ion-img [src]="selectedStory.imgURL" ></ion-img>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-          <ion-item class="story-content" text-justify>{{selectedStory.content}}</ion-item>
-      </ion-col>
-    </ion-row>    
+      <ion-row >
+          <ion-col>
+            <ion-img [src]="selectedStory.imgURL" ></ion-img>
+          </ion-col>
+        </ion-row>
+        <ion-row >
+            <ion-col size="10" offset="1" text-center>
+              <hr color="red"/>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col>
+                  <ion-item class="story-content" text-justify 
+                            padding-bottom>{{selectedStory.content}}</ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row >
+            <ion-col size="10" offset="1" text-center>
+              <hr color="red"/>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col size=8 offset="1">
+                <ion-input type="text" style="border:.5px solid #ccc" 
+                  placeholder="Save something"></ion-input>
+              </ion-col>
+              <ion-col size="2" no-padding>
+                <ion-button color="danger" >
+                  <ion-icon name="add"></ion-icon>
+                </ion-button>
+              </ion-col>
+            </ion-row>    
   </ion-grid>
 </ion-content>
